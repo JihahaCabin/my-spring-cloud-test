@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.itmuch.study</groupId>
-    <artifactId>microservice-provider-user</artifactId>
+    <artifactId>microservice-consumer-movie-feign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>microservice-provider-user</name>
+    <name>microservice-consumer-movie-feign</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -30,6 +30,12 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+            <version>1.4.7.RELEASE</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
@@ -38,7 +44,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-
 
         <dependency>
             <groupId>com.h2database</groupId>
