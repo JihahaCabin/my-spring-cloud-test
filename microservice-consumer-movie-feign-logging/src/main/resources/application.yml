@@ -17,3 +17,6 @@ server:
 logging:
   level:
     com.itmuch.study.microserviceconsumermovie.service.UserFeignClient: debug
+feign:
+  hystrix:
+    enabled: true
