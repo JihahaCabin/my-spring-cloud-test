@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @FeignClient(name = "microservice-provider-user",configuration = FeignLogConfiguration.class,
-fallback= FeignClientFallBack.class)
+fallbackFactory = FeignClientFallBackFactory.class)
 public interface UserFeignClient {
 
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
